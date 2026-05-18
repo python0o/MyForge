@@ -8,14 +8,14 @@ def get_myforge_retriever():
     kb_path = "knowledge_base"
 
     if not os.path.exists(kb_path):
-        print("Warning: knowledge_base folder not found. Returning empty retriever.")
+        print("⚠️ Warning: 'knowledge_base' folder not found. Running without RAG.")
         return None
 
     loader = DirectoryLoader(kb_path, glob="**/*.md", loader_cls=TextLoader)
     docs = loader.load()
 
     if not docs:
-        print("Warning: No documents found in knowledge_base.")
+        print("⚠️ Warning: No documents found in knowledge_base.")
         return None
 
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=600, chunk_overlap=80)
