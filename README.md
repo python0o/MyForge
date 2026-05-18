@@ -1,19 +1,21 @@
-# 🎈 Blank app template
+# MyForge v6 - Ready for Streamlit Deployment
 
-A simple Streamlit app template for you to modify!
+## Features
+- Multi-domain support (Framing, Plumbing, Electrical, Flooring, HVAC)
+- Dedicated graphs per domain
+- Voice input + ElevenLabs voice output with domain-specific voices
+- Improved conversation flow with confirmation
+- In-session memory
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+## Deployment
+This version is prepared for Streamlit Community Cloud.
 
-### How to run it on your own machine
+### How to Deploy
+1. Push this folder to GitHub
+2. Connect repo to Streamlit Cloud
+3. Add your API keys in **Secrets**:
+   - GROQ_API_KEY
+   - ELEVENLABS_API_KEY (optional)
 
-1. Install the requirements
-
-   ```
-   $ pip install -r requirements.txt
-   ```
-
-2. Run the app
-
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+## Folder Structure
+See the organized domains/ folder for future expansion.

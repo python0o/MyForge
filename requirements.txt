@@ -1,1 +1,9 @@
+langgraph
+langchain
+langchain-groq
+langchain-openai
+langchain-community
+chromadb
 streamlit
+python-dotenv
+requests
